@@ -1,0 +1,27 @@
+import React from 'react';
+import './About.css';
+
+const About = () => {
+  return (
+    <div className="about-container">
+      <div className="about-content">
+        <h1>About AI Disease Detection</h1>
+        <p>
+          AI Disease Detection is an innovative platform that leverages artificial intelligence to detect diseases from images.
+          Our goal is to provide fast, accurate, and reliable disease identification to assist both medical professionals and individuals.
+        </p>
+        <div className="about-buttons">
+          <button className="learn-more-btn">Learn More</button>
+          <button className="get-started-btn">Get Started</button>
+        </div>
+      </div>
+
+      <div className="about-images">
+        <img src="https://via.placeholder.com/300" alt="AI Detection" className="about-img" />
+        <img src="https://via.placeholder.com/300" alt="AI Analysis" className="about-img" />
+      </div>
+    </div>
+  );
+};
+
+export default About;
