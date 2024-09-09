@@ -2,6 +2,7 @@
 import React from "react";
 import './Header.css'; // Ensure this path is correct
 import { NavLink, useNavigate } from "react-router-dom";
+import logo from './img/logo.png'
 
 
 const Header = () => {
@@ -18,7 +19,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <h1>AI Disease Detection</h1>
+        <img src={logo} width={150}/>
       </div>
 
       <div className="nav-container">
@@ -39,6 +40,7 @@ const Header = () => {
         <button onClick={handleLogin} className="login-btn">Login</button>
         <button onClick={handleSignup} className="signup-btn">Sign Up</button>
       </div>
+      
     </header>
   );
 };

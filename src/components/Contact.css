@@ -1,27 +1,136 @@
-import React from 'react';
-import './About.css';
-
-const About = () => {
-  return (
-    <div className="about-container">
-      <div className="about-content">
-        <h1>About AI Disease Detection</h1>
-        <p>
-          AI Disease Detection is an innovative platform that leverages artificial intelligence to detect diseases from images.
-          Our goal is to provide fast, accurate, and reliable disease identification to assist both medical professionals and individuals.
-        </p>
-        <div className="about-buttons">
-          <button className="learn-more-btn">Learn More</button>
-          <button className="get-started-btn">Get Started</button>
-        </div>
-      </div>
-
-      <div className="about-images">
-        <img src="https://via.placeholder.com/300" alt="AI Detection" className="about-img" />
-        <img src="https://via.placeholder.com/300" alt="AI Analysis" className="about-img" />
-      </div>
-    </div>
-  );
-};
-
-export default About;
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .contact-container h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .submit-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-social {
+    margin-top: 40px;
+  }
+  
+  .contact-social h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    color: #007bff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 30px 10px;
+    }
+  
+    form {
+      padding: 15px;
+    }
+  
+    .submit-btn {
+      width: 100%;
+    }
+  
+    .social-icons {
+      flex-direction: column;
+    }
+  
+    .social-icons a {
+      font-size: 28px;
+    }
+  }
+  

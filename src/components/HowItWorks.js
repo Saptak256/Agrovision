@@ -1,5 +1,6 @@
 import React from 'react';
 import './HowItWorks.css';
+import flowchart from "./img/flowchart.png"
 
 const HowItWorks = () => {
   return (
@@ -11,7 +12,7 @@ const HowItWorks = () => {
         </p>
       </div>
       <div className="flowchart-container">
-        <img src="/path/to/flowchart.png" alt="Flowchart of the process" className="flowchart-img" />
+        <img src={flowchart}alt="Flowchart of the process" className="flowchart-img" />
       </div>
       <div className="steps">
         <h2>Step-by-Step Process</h2>
